@@ -1,8 +1,8 @@
 [
   {
     "sortSeq": 11,
-    "bannerTitle1": "쌤페스타",
-    "bannerTitle2": "한샘 최대 세일 이벤트",
+    "bannerTitle1": "New Home 페스타",
+    "bannerTitle2": "New Home 최대 세일 이벤트",
     "bannerSubTitle1": "9.28 ~ 10.26",
     "bannerSubTitle2": "~85% SALE",
     "imageCaption1": "",
@@ -36,7 +36,7 @@
   },
   {
     "sortSeq": 12,
-    "bannerTitle1": "쌤페스타 고객님은",
+    "bannerTitle1": "New Home 페스타 고객님은",
     "bannerTitle2": "이사 비용 부담제로!",
     "bannerSubTitle1": "이사/청소/가전케어",
     "bannerSubTitle2": "~20% 할인 바우처",
@@ -73,7 +73,7 @@
     "sortSeq": 13,
     "bannerTitle1": "인테리어",
     "bannerTitle2": "최대 1,400만원 상당 혜택",
-    "bannerSubTitle1": "한샘 매장에서",
+    "bannerSubTitle1": "New Home 매장에서",
     "bannerSubTitle2": "최대 혜택을 만나보세요",
     "imageCaption1": null,
     "imageCaption2": null,
@@ -106,7 +106,7 @@
   },
   {
     "sortSeq": 14,
-    "bannerTitle1": "쌤페스타",
+    "bannerTitle1": "New Home 페스타",
     "bannerTitle2": "인테리어 특가",
     "bannerSubTitle1": "즉시할인 ~25%",
     "bannerSubTitle2": "~40만원 추가 할인+업그레이드 혜택까지",
@@ -142,7 +142,7 @@
   {
     "sortSeq": 15,
     "bannerTitle1": "키친은 다 따져봐도",
-    "bannerTitle2": "돌고돌아 한샘",
+    "bannerTitle2": "돌고돌아 New Home",
     "bannerSubTitle1": "모듈형 아일랜드와 취향을 담은 도어로",
     "bannerSubTitle2": "완성하는 신제품 유로 키친",
     "imageCaption1": "",
@@ -177,7 +177,7 @@
   {
     "sortSeq": 16,
     "bannerTitle1": "수납은 다 따져봐도",
-    "bannerTitle2": "돌고돌아 한샘",
+    "bannerTitle2": "돌고돌아 New Home",
     "bannerSubTitle1": "시그니처 붙박이장ㅣ드레스룸으로",
     "bannerSubTitle2": "방 안 가득 근사하게",
     "imageCaption1": "",
@@ -211,7 +211,7 @@
   },
   {
     "sortSeq": 17,
-    "bannerTitle1": "한샘 침실가구",
+    "bannerTitle1": "New Home 침실가구",
     "bannerTitle2": "이달의 혜택",
     "bannerSubTitle1": "주차별 타임특가",
     "bannerSubTitle2": "BEST 포토리뷰 사은품 증정",
