@@ -1,0 +1,340 @@
+[
+  {
+    "label": "original",
+    "evidence_id": "ev_2ef051094e0026d199b7fafa6e99089ae32bcd9a7e7cf2a9f107ec849b1cadff",
+    "operation": "capture_browser_scenario",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "parameters": {
+      "browser": {
+        "mode": "launch",
+        "executable_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "headless": true
+      },
+      "start_url": {
+        "url": "https://store.hanssem.com/",
+        "query": []
+      },
+      "environment": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "device_scale_factor": 1
+        },
+        "locale": "ko-KR",
+        "timezone": "UTC",
+        "color_scheme": "light",
+        "reduced_motion": "reduce",
+        "service_workers": "block"
+      },
+      "actions": [
+        {
+          "step_id": "loaded",
+          "action": "wait_for_timeout",
+          "duration_ms": 4000
+        }
+      ],
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      },
+      "secrets": [],
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "screenshot",
+          "dom"
+        ],
+        "events": [],
+        "network": {
+          "request_body": false,
+          "response_body": false,
+          "header_values": false
+        }
+      },
+      "scenario_sha256": "1ffabddd7156c0f81830896ad912e21605ffb6746a72d61f8426af81bb1066b2"
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": []
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "after_url": {
+          "url": "https://store.hanssem.com/",
+          "origin": "https://store.hanssem.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      },
+      {
+        "step_id": "loaded",
+        "status": "completed",
+        "after_url": {
+          "url": "https://store.hanssem.com/",
+          "origin": "https://store.hanssem.com",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      }
+    ]
+  },
+  {
+    "label": "desktop",
+    "evidence_id": "ev_f15a99c244b82f6379491086bd0b0279b7ccf7a3766f546cf9bd236b6c5d0f27",
+    "operation": "capture_browser_scenario",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "parameters": {
+      "browser": {
+        "mode": "launch",
+        "executable_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "headless": true
+      },
+      "start_url": {
+        "url": "http://localhost:3000/",
+        "query": []
+      },
+      "environment": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "device_scale_factor": 1
+        },
+        "locale": "ko-KR",
+        "timezone": "UTC",
+        "color_scheme": "light",
+        "reduced_motion": "reduce",
+        "service_workers": "block"
+      },
+      "actions": [
+        {
+          "step_id": "loaded",
+          "action": "wait_for_timeout",
+          "duration_ms": 800
+        }
+      ],
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      },
+      "secrets": [],
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "screenshot"
+        ],
+        "events": [
+          "page-errors"
+        ],
+        "network": {
+          "request_body": false,
+          "response_body": false,
+          "header_values": false
+        }
+      },
+      "scenario_sha256": "4740ae203309ee979f353a2ed879cedd4fd92c43d2fdfb9356931e8c0e238339"
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": []
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "after_url": {
+          "url": "http://localhost:3000/",
+          "origin": "http://localhost:3000",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      },
+      {
+        "step_id": "loaded",
+        "status": "completed",
+        "after_url": {
+          "url": "http://localhost:3000/",
+          "origin": "http://localhost:3000",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      }
+    ]
+  },
+  {
+    "label": "mobile",
+    "evidence_id": "ev_def9f4106a80dd1f9d4b9602b24815fb29f5b0073cd104b69b9a1f322f726281",
+    "operation": "capture_browser_scenario",
+    "authority": "controlled-replay",
+    "confidence": "observed",
+    "parameters": {
+      "browser": {
+        "mode": "launch",
+        "executable_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "headless": true
+      },
+      "start_url": {
+        "url": "http://localhost:3000/",
+        "query": []
+      },
+      "environment": {
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "device_scale_factor": 1
+        },
+        "locale": "ko-KR",
+        "timezone": "UTC",
+        "color_scheme": "light",
+        "reduced_motion": "reduce",
+        "service_workers": "block"
+      },
+      "actions": [
+        {
+          "step_id": "mobile-loaded",
+          "action": "wait_for_timeout",
+          "duration_ms": 400
+        }
+      ],
+      "storage": {
+        "cookies": [],
+        "local_storage": [],
+        "session_storage": []
+      },
+      "secrets": [],
+      "capture": {
+        "after_each_step": [],
+        "at_end": [
+          "screenshot"
+        ],
+        "events": [
+          "page-errors"
+        ],
+        "network": {
+          "request_body": false,
+          "response_body": false,
+          "header_values": false
+        }
+      },
+      "scenario_sha256": "a52751bb58598ca9fed8d324f10e042880f1d919875c4e7765dd06556b298c6d"
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "events": {
+      "retained": 0,
+      "dropped": 0,
+      "items": []
+    },
+    "steps": [
+      {
+        "step_id": "scenario_start",
+        "status": "completed",
+        "after_url": {
+          "url": "http://localhost:3000/",
+          "origin": "http://localhost:3000",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      },
+      {
+        "step_id": "mobile-loaded",
+        "status": "completed",
+        "after_url": {
+          "url": "http://localhost:3000/",
+          "origin": "http://localhost:3000",
+          "query_parameter_names": [],
+          "redacted": false
+        },
+        "completeness": {
+          "status": "complete",
+          "equality_eligible": true,
+          "missing_sections": [],
+          "truncated_sections": []
+        }
+      }
+    ]
+  }
+]
