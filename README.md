@@ -4,6 +4,26 @@
 
 Node.js 18 이상, 별도 패키지 설치 없이 실행합니다. 포트를 바꾸려면 PowerShell에서 `$env:PORT=3001`을 지정한 뒤 실행하세요. 서버는 로컬 PC의 127.0.0.1에만 연결됩니다.
 
+## Vercel 배포
+
+Vercel에서 **Add New → Project → 18tough2415-collab/hansame**을 가져오고 배포하세요. 별도의 환경변수나 서버 설정이 필요하지 않습니다. `vercel.json`에 아래 설정이 포함되어 있습니다.
+
+| 항목 | 값 |
+| --- | --- |
+| Framework Preset | Other |
+| Root Directory | 저장소 루트 (`.`) |
+| Build Command | `node scripts/build.cjs` |
+| Output Directory | `dist` |
+| Environment Variables | 없음 |
+
+이전에 생성한 Vercel 프로젝트에 다른 설정이 있다면 위 값에 맞추세요. 배포는 정적 파일을 CDN에서 제공하는 방식입니다. 화면의 경로는 해시 기반이므로 모든 URL을 `index.html`로 돌리는 rewrite는 필요하지 않습니다. 존재하지 않는 URL에는 `404.html`을 표시합니다.
+
+빌드는 공개할 파일과 `assets/`만 `dist/`에 복사합니다. 소스 분석 자료, Git 데이터, 로컬 서버 코드는 배포하지 않습니다. 파일명이 고정된 HTML·JS·CSS는 재검증하고, 자산은 1시간 캐시하도록 설정했습니다.
+
+로컬에서는 `npm run dev` 또는 `node server.cjs`로 동일한 `dist/` 결과를 미리볼 수 있습니다. 배포 파일 생성에는 `npm run build`, 문법 검사에는 `npm run check`를 사용하세요. 의존성 설치 없이 `node scripts/build.cjs`로 직접 빌드할 수도 있습니다.
+
+데모 로그인과 장바구니는 접속한 브라우저의 로컬 저장소를 사용합니다. localhost, Vercel Preview URL, Production URL의 데이터는 각각 별개이며 기기 간 동기화되지 않습니다. 실제 인증·결제·상담 접수는 연결되지 않습니다.
+
 ## 구현
 
 - 원본의 전체 화면 배너 7개, 실제 이미지·문구·SVG 로고, 8번째 회사 정보 화면
@@ -34,6 +54,8 @@ Aside 스킬을 읽고 설치를 승인받았으나 공식 설치 프로그램�
 REA 증거 ID와 시나리오 범위는 `evidence/summary.json`에 있습니다. 원본 공개 HTML·배포 스크립트는 로컬의 `evidence/source/`에 분석용으로 보관하며 Git 업로드에서 제외합니다. 서비스 화면에서 이 자료를 실행하지 않습니다. 원본·재현 화면은 `evidence/original-desktop.png`, `evidence/clone-desktop.png`, `evidence/clone-mobile.png`에서 비교할 수 있습니다. 배너 자동 전환으로 원본 캡처와 재현 캡처의 활성 배너는 다릅니다.
 
 ## 검증
+
+Vercel용 정적 빌드를 생성하고, 배포 파일 17개를 로컬 HTTP 응답과 SHA-256으로 비교했습니다. 분석 자료·서버 코드·Git 데이터의 404 응답, 누락 URL의 안내 페이지, HEAD 요청, 자산 캐시 헤더, HTML의 로컬 파일 참조를 확인했습니다. Vercel 계정에서의 실제 배포는 별도로 진행해야 합니다.
 
 `node --check app.js`, `node --check server.cjs` 통과. Edge 1440×1000, 390×844 캡처에서 페이지 오류 0건. 브라우저에서 검색(소파 → 1건), 담기, 수량 증가, 삭제, 빈 장바구니, 카테고리 열기, 데모 로그인, 새로고침 후 로그인 유지, 로그아웃, 상담 계획 확인을 검증했습니다.
 

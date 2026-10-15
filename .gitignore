@@ -7,3 +7,5 @@ node_modules/
 Thumbs.db
 # Original third-party HTML and bundles are retained locally for research only.
 evidence/source/
+dist/
+.vercel/
